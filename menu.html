@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu & Price | Hair Salon RICHE</title>
+  <meta name="description" content="Hair Salon RICHE（リッシュ）のメニューと料金表です。カット、カラー、パーマ、トリートメントなど、お客様に合わせた最適なプランをご用意しています。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 追加スタイル：サブページ用のヘッダー背景色 */
+    .header.not-top {
+      background-color: var(--color-lightgray);
+    }
+    .header.not-top.scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header not-top">
+    <a href="index.html" class="logo">RICHE</a>
+    
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu & Price</a></li>
+        <li><a href="info.html" class="nav-link">Salon Info</a></li>
+      </ul>
+      <a href="#reserve" class="btn-reserve">ご予約</a>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="en-title">Menu & Price</h1>
+    <p class="ja-subtitle">メニュー＆料金</p>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="section">
+    <div class="container fade-in">
+      
+      <!-- Cut -->
+      <div class="menu-category">
+        <h2 class="menu-category-title">Cut <span style="font-size: 1rem; color: #888; font-family: var(--font-ja); margin-left: 1rem;">カット</span></h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <span class="menu-name">レディースカット（シャンプー・ブロー込）</span>
+            <span class="menu-price">¥7,700</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">メンズカット（シャンプー・ブロー込）</span>
+            <span class="menu-price">¥6,600</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">前髪カット</span>
+            <span class="menu-price">¥1,100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color -->
+      <div class="menu-category">
+        <h2 class="menu-category-title">Color <span style="font-size: 1rem; color: #888; font-family: var(--font-ja); margin-left: 1rem;">カラー</span></h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <span class="menu-name">フルカラー</span>
+            <span class="menu-price">¥8,800〜</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">リタッチ（根元3cmまで）</span>
+            <span class="menu-price">¥6,600〜</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">ハイライト / ローライト</span>
+            <span class="menu-price">¥5,500〜</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Perm -->
+      <div class="menu-category">
+        <h2 class="menu-category-title">Perm <span style="font-size: 1rem; color: #888; font-family: var(--font-ja); margin-left: 1rem;">パーマ</span></h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <span class="menu-name">デジタルパーマ</span>
+            <span class="menu-price">¥13,200〜</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">コスメパーマ</span>
+            <span class="menu-price">¥11,000〜</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Treatment -->
+      <div class="menu-category">
+        <h2 class="menu-category-title">Treatment <span style="font-size: 1rem; color: #888; font-family: var(--font-ja); margin-left: 1rem;">トリートメント</span></h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <span class="menu-name">TOKIOインカラミトリートメント</span>
+            <span class="menu-price">¥5,500〜</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">髪質改善トリートメント（酸熱）</span>
+            <span class="menu-price">¥16,500〜</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coupon -->
+      <div class="coupon-banner fade-in">
+        <h3 class="coupon-title">First Time Visitor</h3>
+        <p class="coupon-desc">ご新規様限定：全メニュー <strong>20% OFF</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reserve" class="reservation-section">
+    <div class="container fade-in">
+      <div class="section-title" style="margin-bottom: 2rem;">
+        <h2 class="en-title">Reservation</h2>
+        <p class="ja-subtitle">ご予約</p>
+      </div>
+
+      <div class="external-booking">
+        <a href="#" class="btn-hotpepper" target="_blank" rel="noopener noreferrer">ホットペッパービューティーからのご予約はこちら</a>
+        <div class="separator"><span>または当サイトから予約</span></div>
+      </div>
+      
+      <form class="reservation-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name" class="form-label">Name <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">お名前</span></label>
+          <input type="text" id="name" name="name" class="form-control" required placeholder="例：山田 花子">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">電話番号</span></label>
+          <input type="tel" id="phone" name="phone" class="form-control" required placeholder="例：03-1234-5678">
+        </div>
+
+        <div class="form-group">
+          <label for="stylist" class="form-label">Stylist <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">希望スタイリスト</span></label>
+          <select id="stylist" name="stylist" class="form-control">
+            <option value="">指名なし</option>
+            <option value="tanaka">田中 翔</option>
+            <option value="suzuki">鈴木 あかり</option>
+            <option value="sasaki">佐々木 遥</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Date & Time <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">ご希望日時</span></label>
+          <div class="calendar-header">
+            <button type="button" class="btn-calendar-nav" id="prevWeek">＜ 前の週</button>
+            <button type="button" class="btn-calendar-nav" id="nextWeek">次の週 ＞</button>
+          </div>
+          <div class="calendar-wrapper">
+            <table class="availability-calendar">
+              <thead id="calendarHead">
+              </thead>
+              <tbody id="calendarBody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="menu" class="form-label">Menu <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">ご希望メニュー</span></label>
+          <select id="menu" name="menu" class="form-control">
+            <option value="">メニューを選択してください</option>
+            <option value="cut">カット</option>
+            <option value="color">カラー</option>
+            <option value="cut_color">カット＋カラー</option>
+            <option value="perm">パーマ</option>
+            <option value="treatment">トリートメント</option>
+            <option value="other">その他・相談して決めたい</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="form-label">Message <span style="font-size:0.8rem; color:#888; font-family:var(--font-ja); margin-left:0.5rem;">ご要望など</span></label>
+          <textarea id="message" name="message" class="form-control" placeholder="ご質問や髪のお悩みなどがあればご記入ください。"></textarea>
+        </div>
+        
+        <button type="submit" class="btn-submit">予約する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">RICHE</div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu & Price</a></li>
+      <li><a href="info.html">Salon Info</a></li>
+    </ul>
+    <div class="footer-sns">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sns">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sns">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.73 16h5L9 4z"></path><path d="M4 20l6.76-6.76"></path><path d="M20 4l-6.76 6.76"></path></svg>
+        <span>X</span>
+      </a>
+    </div>
+    <p class="copyright">&copy; 2026 Hair Salon RICHE. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" id="btnCloseModalIcon">&times;</span>
+      <h3 class="modal-title">ご予約内容の確認</h3>
+      <div class="modal-details">
+        <p><strong>お名前:</strong> <span id="confirmName"></span></p>
+        <p><strong>電話番号:</strong> <span id="confirmPhone"></span></p>
+        <p><strong>希望スタイリスト:</strong> <span id="confirmStylist"></span></p>
+        <p><strong>ご希望日時:</strong> <span id="confirmDate"></span></p>
+        <p><strong>ご希望メニュー:</strong> <span id="confirmMenu"></span></p>
+        <p><strong>ご要望:</strong> <span id="confirmMessage"></span></p>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" id="btnCancel">修正する</button>
+        <button type="button" class="btn-confirm" id="btnSubmitFinal">送信する</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

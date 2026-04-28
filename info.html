@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Info | Hair Salon RICHE</title>
+  <meta name="description" content="東京・表参道「Hair Salon RICHE（リッシュ）」の店舗情報、営業時間、アクセスについて。表参道駅A2出口から徒歩3分です。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 追加スタイル：サブページ用のヘッダー背景色 */
+    .header.not-top {
+      background-color: var(--color-lightgray);
+    }
+    .header.not-top.scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header not-top">
+    <a href="index.html" class="logo">RICHE</a>
+    
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu & Price</a></li>
+        <li><a href="info.html" class="nav-link active">Salon Info</a></li>
+      </ul>
+      <a href="menu.html#reserve" class="btn-reserve">ご予約</a>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="en-title">Salon Info</h1>
+    <p class="ja-subtitle">サロン情報</p>
+  </div>
+
+  <!-- Info Section -->
+  <section class="section">
+    <div class="container fade-in">
+      
+      <!-- Gallery -->
+      <div class="gallery-grid">
+        <img src="images/shampoo_station.png" alt="シャンプー台" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=1000&auto=format&fit=crop" alt="サロンの雰囲気" class="gallery-img">
+      </div>
+
+      <!-- Info Table & Map -->
+      <div class="info-wrapper">
+        <div class="info-details">
+          <table class="info-table">
+            <tbody>
+              <tr>
+                <th>Address</th>
+                <td>〒150-0001<br>東京都渋谷区神宮前4-XX-XX 2F</td>
+              </tr>
+              <tr>
+                <th>Phone</th>
+                <td>03-XXXX-XXXX</td>
+              </tr>
+              <tr>
+                <th>Open</th>
+                <td>平日 10:00 - 20:00<br>土日祝 9:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Close</th>
+                <td>毎週火曜日</td>
+              </tr>
+              <tr>
+                <th>Access</th>
+                <td>東京メトロ 表参道駅 A2出口より徒歩3分</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="info-map">
+          <!-- ダミーのGoogleマップ埋め込み（表参道駅周辺） -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3855523091913!2d139.70932821525835!3d35.66750058019741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca0b1c0688f%3A0x6b6d51bb5dbb13fb!2z6KGo5Y-C6YGT6aeF!5e0!3m2!1sja!2sjp!4v1680000000000!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">RICHE</div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu & Price</a></li>
+      <li><a href="info.html">Salon Info</a></li>
+    </ul>
+    <div class="footer-sns">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sns">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sns">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.73 16h5L9 4z"></path><path d="M4 20l6.76-6.76"></path><path d="M20 4l-6.76 6.76"></path></svg>
+        <span>X</span>
+      </a>
+    </div>
+    <p class="copyright">&copy; 2026 Hair Salon RICHE. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
