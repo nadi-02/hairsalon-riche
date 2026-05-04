@@ -561,6 +561,22 @@ textarea.form-control {
   background-color: var(--color-lightgray);
 }
 
+/* 左上角のセル（"時間"）は縦・横両方のスクロールで固定 */
+.availability-calendar thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3; /* 他のstickyヘッダーより前面に表示 */
+  background-color: var(--color-lightgray);
+}
+
+/* 時間列（各行の最初のth）を横スクロール時に左端に固定 */
+.availability-calendar tbody th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: var(--color-lightgray);
+}
+
 .availability-calendar th {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -903,6 +919,13 @@ textarea.form-control {
   .stylist-grid {
     grid-template-columns: 1fr;
     gap: 4rem;
+  }
+
+  /* スマホではbackground-attachment:fixedが正しく動作しないため、scrollに変更 */
+  .hero {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-title {
