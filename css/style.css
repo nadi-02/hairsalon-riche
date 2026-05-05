@@ -214,6 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   height: 100vh;
+  height: 100dvh; /* スマホのURLバーを考慮した高さ設定 */
   position: relative;
   display: flex;
   align-items: center;
@@ -598,6 +599,7 @@ textarea.form-control {
 }
 
 .availability-calendar thead th {
+  position: -webkit-sticky; /* Safari用の対応 */
   position: sticky;
   top: 0;
   z-index: 2;
@@ -608,6 +610,7 @@ textarea.form-control {
 
 /* 左上角のセル（"時間"）は縦・横両方のスクロールで固定 */
 .availability-calendar thead th:first-child {
+  position: -webkit-sticky; /* Safari用の対応 */
   position: sticky;
   left: 0;
   z-index: 3; /* 他のstickyヘッダーより前面に表示 */
@@ -616,6 +619,7 @@ textarea.form-control {
 
 /* 時間列（各行の最初のth）を横スクロール時に左端に固定 */
 .availability-calendar tbody th:first-child {
+  position: -webkit-sticky; /* Safari用の対応 */
   position: sticky;
   left: 0;
   z-index: 1;
@@ -966,11 +970,9 @@ textarea.form-control {
     gap: 4rem;
   }
 
-  /* スマホではbackground-attachment:fixedが正しく動作しないため、scrollに変更 */
-  .hero {
+  /* スマホではbackground-attachment:fixedが正しく動作しないため、画像を持つスライドをscrollに変更 */
+  .slide {
     background-attachment: scroll;
-    background-size: cover;
-    background-position: center;
   }
 
   .hero-title {
