@@ -588,6 +588,8 @@ textarea.form-control {
   max-height: 400px; /* 13:00あたりまで表示 */
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
+  overscroll-behavior: none; /* スマホでのスクロール時のバウンド（ぐらぐら）防止 */
+  -webkit-overflow-scrolling: touch; /* スムーズスクロールの有効化 */
 }
 
 .availability-calendar {
@@ -606,15 +608,18 @@ textarea.form-control {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: var(--color-lightgray);
+  transform: translateZ(0); /* iOSのスクロール時のちらつき・ぐらつき防止 */
 }
 
 /* 左上角のセル（"時間"）は縦・横両方のスクロールで固定 */
 .availability-calendar thead th:first-child {
   position: -webkit-sticky; /* Safari用の対応 */
   position: sticky;
+  top: 0; /* 念のため明示 */
   left: 0;
   z-index: 3; /* 他のstickyヘッダーより前面に表示 */
   background-color: var(--color-lightgray);
+  transform: translateZ(0);
 }
 
 /* 時間列（各行の最初のth）を横スクロール時に左端に固定 */
@@ -624,6 +629,7 @@ textarea.form-control {
   left: 0;
   z-index: 1;
   background-color: var(--color-lightgray);
+  transform: translateZ(0);
 }
 
 .availability-calendar th {
